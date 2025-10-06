@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowUpIcon, ArrowDownIcon, DollarSign, ShoppingCart, Users } from 'lucide-react';
+import { ArrowUp as ArrowUpIcon, ArrowDown as ArrowDownIcon, DollarSign, ShoppingCart, Users } from 'lucide-react';
 
 interface KPICardProps {
   title: string;
