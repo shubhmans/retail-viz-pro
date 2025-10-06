@@ -1,13 +1,15 @@
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-const data = [
-  { category: "Electronics", revenue: 45200 },
-  { category: "Fashion", revenue: 38400 },
-  { category: "Home", revenue: 25100 },
-  { category: "Sports", revenue: 15900 },
-];
+interface CategoryData {
+  category: string;
+  revenue: number;
+}
 
-export const CategoryChart = () => {
+interface CategoryChartProps {
+  data: CategoryData[];
+}
+
+export const CategoryChart = ({ data }: CategoryChartProps) => {
   return (
     <ResponsiveContainer width="100%" height={300}>
       <BarChart data={data}>
